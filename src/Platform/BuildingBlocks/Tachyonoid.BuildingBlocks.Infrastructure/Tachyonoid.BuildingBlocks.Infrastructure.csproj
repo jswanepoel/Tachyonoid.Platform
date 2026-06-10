@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Tachyonoid.BuildingBlocks.Infrastructure</RootNamespace>
+    <AssemblyName>Tachyonoid.BuildingBlocks.Infrastructure</AssemblyName>
+    <Description>Common infrastructure: messaging, caching, outbox pattern, integration adapters.</Description>
+    <PackageTags>hermes;buildingblocks;infrastructure;messaging;outbox</PackageTags>
+    <IsPackable>true</IsPackable>
+    <NoWarn>NU1603</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tachyonoid.BuildingBlocks.Application\Tachyonoid.BuildingBlocks.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="10.0.0-preview.2.25164.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.2.0" />
+  </ItemGroup>
+
+</Project>

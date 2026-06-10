@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Tachyonoid.SharedKernel</RootNamespace>
+    <AssemblyName>Tachyonoid.SharedKernel</AssemblyName>
+    <Description>Hermes cross-context business value objects. Money, Email, Address, PhoneNumber, etc. ZERO dependencies.</Description>
+    <PackageTags>hermes;sharedkernel;valueobjects;domain</PackageTags>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <!-- SharedKernel has ZERO dependencies per ADR-019 -->
+
+</Project>

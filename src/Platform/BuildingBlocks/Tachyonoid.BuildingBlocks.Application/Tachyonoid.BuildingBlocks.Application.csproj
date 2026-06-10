@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Tachyonoid.BuildingBlocks.Application</RootNamespace>
+    <AssemblyName>Tachyonoid.BuildingBlocks.Application</AssemblyName>
+    <Description>Application layer abstractions: custom mediator, commands, queries, pipeline behaviors, validators. ZERO MediatR dependency.</Description>
+    <PackageTags>hermes;buildingblocks;application;cqrs;mediator;pipeline</PackageTags>
+    <IsPackable>true</IsPackable>
+    <NoWarn>NU1603</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Tachyonoid.BuildingBlocks.Domain\Tachyonoid.BuildingBlocks.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Mapster" Version="7.4.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.0-*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.0-*" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+<Solution>
+  <Configurations>
+    <Configuration Name="Debug" />
+    <Configuration Name="Release" />
+  </Configurations>
+
+  <Folder Name="/src/" />
+  <Folder Name="/src/Platform/" />
+
+  <Folder Name="/src/Platform/SharedKernel/">
+    <Project Path="src/Platform/SharedKernel/Tachyonoid.SharedKernel/Tachyonoid.SharedKernel.csproj" />
+  </Folder>
+
+  <Folder Name="/src/Platform/BuildingBlocks/">
+    <Project Path="src/Platform/BuildingBlocks/Tachyonoid.BuildingBlocks.Domain/Tachyonoid.BuildingBlocks.Domain.csproj" />
+    <Project Path="src/Platform/BuildingBlocks/Tachyonoid.BuildingBlocks.Application/Tachyonoid.BuildingBlocks.Application.csproj" />
+    <Project Path="src/Platform/BuildingBlocks/Tachyonoid.BuildingBlocks.Persistence/Tachyonoid.BuildingBlocks.Persistence.csproj" />
+    <Project Path="src/Platform/BuildingBlocks/Tachyonoid.BuildingBlocks.Infrastructure/Tachyonoid.BuildingBlocks.Infrastructure.csproj" />
+  </Folder>
+</Solution>

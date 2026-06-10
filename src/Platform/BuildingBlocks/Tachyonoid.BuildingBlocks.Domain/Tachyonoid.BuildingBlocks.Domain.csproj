@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <RootNamespace>Tachyonoid.BuildingBlocks.Domain</RootNamespace>
+    <AssemblyName>Tachyonoid.BuildingBlocks.Domain</AssemblyName>
+    <Description>Base domain abstractions: Entity, ValueObject, Result, IRepository. ZERO dependencies.</Description>
+    <PackageTags>hermes;buildingblocks;domain;ddd</PackageTags>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <!-- BuildingBlocks.Domain has ZERO dependencies per ADR-019 -->
+
+</Project>
